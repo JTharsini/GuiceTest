@@ -15,6 +15,9 @@ public class Main {
 		InjectingTest injectingTest = injector.getInstance(InjectingTest.class);
 		injectingTest.print();
 		
+		injectingTest.printImpl1();
+		injectingTest.printImpl2();
+		
 		// should create at least one object of each type using injector. 
 		// Then only able to get object.
 	}
