@@ -3,9 +3,8 @@ package guice.jeya.firsttry;
 public class JeyaImpl implements Jeya {
 
 	@Override
-	public void print() {
+	public void print(String arg) {
 		// TODO Auto-generated method stub
-		System.out.println("Print from JeyaImpl");
+		System.out.println(arg);
 	}
-
 }

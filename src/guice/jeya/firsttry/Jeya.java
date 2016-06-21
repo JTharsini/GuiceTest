@@ -1,5 +1,5 @@
 package guice.jeya.firsttry;
 
 public interface Jeya {
-	void print();
+	void print(String arg);
 }

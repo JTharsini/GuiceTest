@@ -10,7 +10,10 @@ public class Main {
 		MyModule module = new MyModule();
 		Injector injector = Guice.createInjector(module);
 		Jeya jeya = injector.getInstance(JeyaImpl.class);
-		jeya.print();
+		jeya.print("Print from JeyaImpl");
+		
+		InjectingTest injectingTest = injector.getInstance(InjectingTest.class);
+		injectingTest.print();
 		
 		// should create at least one object of each type using injector. 
 		// Then only able to get object.
