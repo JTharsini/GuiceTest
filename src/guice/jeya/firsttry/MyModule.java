@@ -17,6 +17,9 @@ public class MyModule extends AbstractModule {
 		(AnnotationToImpl2.class).to
 		(InterfaceToImplementByManyClassesImpl2.class);
 		//this.bind(JeyaImpl.class).asEagerSingleton();
+		
+		this.bind(Service.class).to(ServiceImpl.class);
+		this.bind(Widget.class).toProvider(WidgetProvider.class);
 	}
 
 }

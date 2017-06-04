@@ -20,5 +20,8 @@ public class Main {
 		
 		// should create at least one object of each type using injector. 
 		// Then only able to get object.
+		
+		Widget widget = injector.getInstance(WidgetProvider.class).get();
+		widget.print();
 	}
 }
